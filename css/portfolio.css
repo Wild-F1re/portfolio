@@ -1,0 +1,112 @@
+.masthead{
+    height: 90vh;
+}
+
+header h1{
+    color: white;
+    font-weight: 100;
+
+}
+.container01{
+    height: 100%;
+}
+
+.header-btn{
+    color:white;
+    font-size:3vw;
+    text-decoration: none;
+
+}
+.header-btn:hover{
+    text-decoration: none;
+}
+.header-btn-text{
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+}
+
+.container01{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.portfolio-item{
+    height:30vh;
+    display: flex;
+    align-items: center;
+}
+.img-fluid{
+    object-fit: cover;
+}
+
+.skill-list div{
+    width:25%;
+}
+
+.skill-list{
+    display: flex;
+    justify-content: space-between;
+    padding:0 15%;
+}
+
+
+
+
+.plofile-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.plofile-container div{
+    width:50%;
+}
+.plofile__img img{
+    width: 50%;
+}
+
+form{
+    width:60vw;
+    margin: 0 auto;
+}
+
+
+@media(max-width:768px){
+    .masthead{
+        background-size: cover;
+        padding: 0;
+    }
+    .container01{
+        
+    }
+    .header-btn{
+        font-size: 5vh;
+    }
+    .header-btn-text{
+        font-size: 4vh;
+    }
+
+    #portfolio{
+        padding:4rem 0 5rem 0;
+    }
+
+
+    .plofile-container{
+        flex-direction: column;
+    }
+    .plofile-container div{
+        width:100%;
+    }
+    .plofile__img{
+        margin-bottom:5vh;
+    }
+    .plofile__img img{
+        width:80%;
+    }
+    
+    .skill-list div{
+        width:100%;
+    }
+
+}
