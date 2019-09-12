@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<!-- aaaaaaaaaatest -->
-
 <head>
 
   <meta charset="utf-8">
@@ -10,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Stylish Portfolio - Start Bootstrap Template</title>
+  <title>maki-Portfolio</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,6 +20,11 @@
 
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+  <link href="css/portfolio.css" rel="stylesheet">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+  
 
 </head>
 
@@ -34,19 +37,16 @@
   <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
       <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#page-top">Home</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">About</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">Services</a>
+        <a class="js-scroll-trigger" href="#page-top">Top</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#services">Skill</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#about">Profile</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#contact">Contact</a>
@@ -56,163 +56,182 @@
 
   <!-- Header -->
   <header class="masthead d-flex">
-    <div class="container text-center my-auto">
-      <h1 class="mb-1">Stylish Portfolio</h1>
-      <h3 class="mb-5">
-        <em>A Free Bootstrap Theme by Start Bootstrap</em>
-      </h3>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+    <div class="container container01">
+      <h1 class="mb-1 text-left "></h1>
+      <h3 class="mb-5"></h3>
+      <a class="js-scroll-trigger text-center header-btn" href="#portfolio">
+        
+        <i class="fas fa-angle-down header-btn"></i>
+        <p class="header-btn-text">more!</p>
+      </a>
     </div>
     <div class="overlay"></div>
   </header>
 
-  <!-- About -->
-  <section class="content-section bg-light" id="about">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-          <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
-            <a href="https://unsplash.com/">Unsplash</a>!</p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
+  
+  <!-- Portfolio -->
+  <section class="content-section" id="portfolio">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0"></h3>
+          <h2 class="text-secondary mb-5">Portfolio</h2>
+        </div>
+        <div class="row no-gutters gallery">
+
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Fire</h2>
+                  <p class="mb-0">PaintTool SAI,2018</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/fire.jpeg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Ice Cream</h2>
+                  <p class="mb-0">My Desk</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/device.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Pizza</h2>
+                  <p class="mb-0">pizzapizzapizzapizza</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/pizza.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>CAT</h2>
+                  <p class="mb-0">^_^</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/cat01.JPG" alt="">
+            </a>
+          </div>
+
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
   <!-- Services -->
   <section class="content-section bg-primary text-white text-center" id="services">
     <div class="container">
       <div class="content-section-heading">
-        <h3 class="text-secondary mb-0">Services</h3>
-        <h2 class="mb-5">What We Offer</h2>
+        <h3 class="text-secondary mb-0"></h3>
+        <h2 class="mb-5"></h2>
       </div>
-      <div class="row">
+      <div class="row skill-list">
         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-screen-smartphone"></i>
+              <i class="fas fa-laptop-code"></i>
           </span>
           <h4>
-            <strong>Responsive</strong>
+            <strong>HTML</strong>
           </h4>
-          <p class="text-faded mb-0">Looks great on any screen size!</p>
+          <p class="text-faded mb-0"></p>
         </div>
+
         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-pencil"></i>
-          </span>
-          <h4>
-            <strong>Redesigned</strong>
-          </h4>
-          <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+            <span class="service-icon rounded-circle mx-auto mb-3">
+                <i class="fas fa-keyboard"></i>
+            </span>
+            <h4>
+              <strong>CSS</strong>
+            </h4>
+            <p class="text-faded mb-0"></p>
         </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-like"></i>
-          </span>
-          <h4>
-            <strong>Favorited</strong>
-          </h4>
-          <p class="text-faded mb-0">Millions of users
-            <i class="fas fa-heart"></i>
-            Start Bootstrap!</p>
+
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+                <i class="fas fa-wrench"></i>
+            </span>
+            <h4>
+              <strong>jQuery</strong>
+            </h4>
+            <p class="text-faded mb-0"></p>
         </div>
+
         <div class="col-lg-3 col-md-6">
           <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-mustache"></i>
+            
+            <i class="fas fa-paint-brush"></i>
+            
           </span>
           <h4>
-            <strong>Question</strong>
+            <strong>Design</strong>
           </h4>
-          <p class="text-faded mb-0">I mustache you a question...</p>
+          <p class="text-faded mb-0"></p>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Callout -->
-  <section class="callout">
-    <div class="container text-center">
-      <h2 class="mx-auto mb-5">Welcome to
-        <em>your</em>
-        next website!</h2>
-      <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Download Now!</a>
-    </div>
-  </section>
-
-  <!-- Portfolio -->
-  <section class="content-section" id="portfolio">
-    <div class="container">
-      <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">Portfolio</h3>
-        <h2 class="mb-5">Recent Projects</h2>
+  
+  <!-- About -->
+  <section class="content-section bg-light" id="about">
+      <div class="container text-center ">
+        <div class="plofile-container">
+          <div class="plofile__img">
+              <img src="img/maki.jpg">
+          </div>
+          <div class="plofile__text text-left">
+            <h2>Profile</h2>
+            <p class="mb-3">大分県立芸術短期大学<br>情報コミュニケーション学科１年</p>
+            <p class="lead mb-3 font-weight-bold">牧 琴音</p>
+            <p>1999.6.5   大分県出身</p>
+            <p>幼少の頃からPCに触れ、高校の授業でプログラミングに興味を持つ。<br>イラストや音楽、動画など、ジャンルを問わずPCを使った制作全般が趣味。</p>
+            <!-- <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a> -->
+          </div>
+        </div>
+        
       </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Stationary</h2>
-                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Ice Cream</h2>
-                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Strawberries</h2>
-                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Workspace</h2>
-                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  
+    <!-- Map -->
+  <section class="map">
+      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7001445.472446319!2d135.15384664505686!3d37.53453079809481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35445c95e3d84793%3A0x3f17b7f27036bee2!2z5aSn5YiG55yM!5e0!3m2!1sja!2sjp!4v1568174618772!5m2!1sja!2sjp"></iframe>
+      <br />
+      <small>
+         
+      </small>
+    </section>
 
   <!-- Call to Action -->
-  <section class="content-section bg-primary text-white">
-    <div class="container text-center">
-      <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-      <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
-      <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
-    </div>
+  <section id="contact" class="content-section bg-primary text-white">
+    <form>
+        <!-- Eメール入力エリア -->
+        <div class="form-group">
+          <label>Email address</label>
+          <input type="email" class="form-control" placeholder="Email">
+        </div>
+        <!-- テキストエリア -->
+        <div class="form-textarea">
+            <label>text</label>
+            <textarea class="form-control" rows="3" placeholder="..."></textarea>
+            <br>
+        </div>
+        <!-- 送信ボタン -->
+        <button type="submit" class="btn btn-default bg-warning text-white">Submit</button>
+    </form>
   </section>
 
-  <!-- Map -->
-  <section id="contact" class="map">
-    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-    <br />
-    <small>
-      <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-    </small>
-  </section>
+  
 
   <!-- Footer -->
   <footer class="footer text-center">
