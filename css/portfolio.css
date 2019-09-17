@@ -108,6 +108,18 @@ form{
     width:60vw;
     margin: 0 auto;
 }
+.bg-primary,.social-link{
+    background-color:black !important;
+}
+.service-icon{
+    color:black;
+}
+/* #sidebar-wrapper{
+    background-color: #006699;
+} */
+/* .sidebar-nav li.sidebar-nav-item a,.sidebar-nav>.sidebar-brand a{
+    color:black;
+} */
 
 
 @media(max-width:768px){
@@ -154,5 +166,5 @@ form{
     .modal-text{
         line-height: 100%;
     }
-
+    
 }
